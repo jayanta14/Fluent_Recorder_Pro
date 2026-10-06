@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Fluent Recorder Pro</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --accent: #3b82f6;
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.15);
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      color: #a7f3d0;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <span class="badge">Official Policy</span>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last Updated: October 6, 2026 • Fluent Recorder Pro Chrome Extension</div>
+
+    <div class="highlight-box">
+      <p>🛡️ <strong>Summary:</strong> Fluent Recorder Pro operates completely locally inside your browser. We do not collect, store, sell, or transmit any user data, browsing history, audio, or video streams to remote servers.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>Fluent Recorder Pro ("we", "our", or "the extension") is a lightweight browser extension designed to record desktop screens, application windows, tabs, and audio. We are deeply committed to user privacy and transparent practices.</p>
+
+    <h2>2. Zero Data Collection</h2>
+    <p>Fluent Recorder Pro does not collect any personal data or usage metrics. Specifically, we do not collect:</p>
+    <ul>
+      <li>Personally Identifiable Information (name, email, IP address, etc.)</li>
+      <li>Browsing history, open tabs, or web activity</li>
+      <li>Keystrokes, mouse events, or analytics</li>
+      <li>Location data or device identifiers</li>
+    </ul>
+
+    <h2>3. Processing of Video & Audio Recordings</h2>
+    <p>All video and audio recording features are executed purely in-memory on your local machine using standard HTML5 and Chromium APIs:</p>
+    <ul>
+      <li><strong>Display Media API (<code>getDisplayMedia</code>):</strong> Used exclusively to capture your chosen screen, window, or browser tab with your explicit confirmation.</li>
+      <li><strong>User Media API (<code>getUserMedia</code>):</strong> Used solely to capture your microphone input when enabled by you.</li>
+      <li><strong>Web Audio API:</strong> Used to combine and mix system and microphone audio streams locally.</li>
+    </ul>
+    <p>Captured streams and finished video files (<code>.webm</code>) are never transmitted to external cloud servers. All recording processing stays strictly within your browser session.</p>
+
+    <h2>4. Extension Permissions</h2>
+    <p>Our extension requests only the minimum required permissions necessary to perform its core functions:</p>
+    <ul>
+      <li><strong><code>storage</code>:</strong> Used locally to save your configuration preferences (e.g., FPS settings, preferred microphone device) and maintain local playback history in browser IndexedDB.</li>
+      <li><strong><code>downloads</code>:</strong> Used to save your completed video recording files directly to your device's Downloads directory upon stopping a recording.</li>
+    </ul>
+
+    <h2>5. Third-Party Services & Remote Code</h2>
+    <p>Fluent Recorder Pro does not load any remote scripts, advertising tracking networks, or third-party analytics libraries. All application code is self-contained within the extension package.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>Any revisions to this privacy policy will be posted directly to this page with an updated revision date.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or the security of Fluent Recorder Pro, please submit an issue or reach out via our Chrome Web Store developer listing page.</p>
+
+    <footer>
+      &copy; 2026 Fluent Recorder Pro. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
